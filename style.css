@@ -109,6 +109,29 @@ body {
     line-height: 1.8;
 }
 
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+}
+
+.info-item .label {
+    min-width: 100px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-item .value {
+    flex: 1;
+    color: #444;
+}
+
 /* 联系信息样式 */
 .contact-info {
     margin-top: 2rem;
@@ -517,4 +540,3 @@ footer {
     color: var(--accent-color);
     text-decoration: underline;
 }
-
