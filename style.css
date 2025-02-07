@@ -60,7 +60,7 @@ body {
 
 /* 主容器样式 */
 .container {
-    flex: 1;
+    flex: 1 0 auto;
     width: 100%;
     max-width: 1200px;
     margin: 2rem auto;
@@ -133,29 +133,34 @@ body {
 }
 
 /* 联系信息样式 */
-.contact-info {
+.contact-section {
     margin-top: 2rem;
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
 }
 
-.info-item {
-    margin-bottom: 0.5rem;
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.contact-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
+    gap: 1rem;
+    color: #555;
 }
 
-.info-item .icon {
-    width: 1.5rem;
-}
-
-.info-item a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.info-item a:hover {
-    text-decoration: underline;
+.contact-item i {
+    font-size: 1.2rem;
+    color: #007bff;
+    width: 24px;
+    text-align: center;
 }
 
 /* 出版物部分样式 */
@@ -512,31 +517,22 @@ body {
 
 /* 页脚样式 */
 footer {
-    width: 100%;
-    border-top: 1px solid var(--border-color);
-    padding: 2rem 0;
-    background-color: #f6f8fa;
-    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    color: #586069;
+    padding: 0 1rem;
 }
 
-.footer-content a {
-    color: #586069;
-    text-decoration: none;
-    margin-left: 1rem;
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-.footer-content a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
