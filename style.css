@@ -49,6 +49,11 @@ body {
     color: var(--accent-color);
 }
 
+.nav-item.active {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
 /* 主容器样式 */
 .container {
     max-width: 1200px;
@@ -124,6 +129,358 @@ body {
     text-decoration: underline;
 }
 
+/* 出版物部分样式 */
+.publications-section {
+    margin-top: 2rem;
+}
+
+.publications-section h2 {
+    font-size: 1.5rem;
+    color: #24292e;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.publication-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.paper-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.paper-title a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.paper-title a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.publication-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.publication-abstract {
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.publication-authors {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.publication-links {
+    font-size: 0.9rem;
+}
+
+.download-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.download-link:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+/* 荣誉与社会任职页面样式 */
+.honors-section {
+    margin-top: 1rem;
+}
+
+.section-title {
+    margin-top: 2.5rem;
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+
+.honors-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.honor-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.honor-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.honor-text {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.positions-list {
+    margin-top: 1.5rem;
+}
+
+.position-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.position-icon {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.position-content {
+    flex-grow: 1;
+}
+
+.position-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.sub-positions {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.sub-positions li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.sub-positions li::before {
+    content: "•";
+    position: absolute;
+    left: 0.5rem;
+    color: var(--accent-color);
+}
+
+/* 科研项目页面样式 */
+.projects-section {
+    margin-top: 2rem;
+}
+
+.project-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.project-title a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-title a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.project-meta {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.project-meta span {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.project-type {
+    color: #1976D2;
+    font-weight: 500;
+}
+
+.project-id {
+    color: #666;
+}
+
+.project-role {
+    color: #444;
+}
+
+.project-image {
+    margin: 1.5rem 0;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-description {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 教学与授课页面样式 */
+.teaching-section {
+    margin-top: 2rem;
+}
+
+.teaching-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.teaching-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.teaching-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.teaching-title a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.teaching-title a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.teaching-meta {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.teaching-meta span {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.teaching-meta .course-type {
+    color: #1976D2;
+    font-weight: 500;
+}
+
+.teaching-meta .institution {
+    font-style: italic;
+}
+
+.teaching-meta .year {
+    color: #888;
+}
+
+.teaching-description {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.teaching-description p {
+    margin: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .project-meta {
+        flex-direction: column;
+    }
+    
+    .project-meta span {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .teaching-meta span {
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+    
+    .teaching-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .honor-item, .position-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .position-content {
+        font-size: 0.95rem;
+    }
+
+    .sub-positions li {
+        padding-left: 1rem;
+    }
+}
+
 /* 页脚样式 */
 footer {
     border-top: 1px solid var(--border-color);
@@ -152,26 +509,5 @@ footer {
 .footer-content a:hover {
     color: var(--accent-color);
     text-decoration: underline;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
 }
 
