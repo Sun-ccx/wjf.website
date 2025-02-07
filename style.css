@@ -520,11 +520,12 @@ body {
 
 /* 页脚样式 */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #666;
     padding: 1rem 0;
     text-align: center;
     flex-shrink: 0;
+    border-top: 1px solid #eee;
 }
 
 .footer-content {
@@ -536,6 +537,5 @@ footer {
 .footer-content p {
     margin: 0;
     font-size: 0.9rem;
-    opacity: 0.8;
+    opacity: 1;
 }
-
