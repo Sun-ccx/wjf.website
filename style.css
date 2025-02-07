@@ -73,81 +73,108 @@ body {
 /* 个人资料部分 */
 .profile-section {
     display: flex;
-    gap: 3rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
 }
 
 .profile-image {
     flex-shrink: 0;
-    width: 200px;
-    height: 240px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    width: 260px;
 }
 
 #avatar {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 0;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
-.profile-info {
-    flex-grow: 1;
+.brief-info {
+    text-align: left;
 }
 
-.profile-info h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-color);
-}
-
-.profile-info h2 {
+.brief-info h2 {
     font-size: 1.2rem;
-    margin: 1.5rem 0 1rem;
-    color: var(--text-color);
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.brief-info p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    margin-top: 1rem;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.link-item .icon {
+    width: 20px;
+    text-align: center;
+}
+
+/* 主要信息部分 */
+.profile-info {
+    flex: 1;
 }
 
 .info-content {
-    color: #444;
-    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
-.personal-info .info-item {
+.basic-info {
+    margin-bottom: 2rem;
+}
+
+.info-row {
+    display: flex;
     margin-bottom: 0.8rem;
-}
-
-.personal-info .label {
-    font-weight: 500;
-    color: #333;
-    margin-right: 1rem;
-}
-
-.research-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.research-section li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.research-section li::before {
-    content: "•";
-    position: absolute;
-    left: 0.5rem;
-    color: var(--accent-color);
-}
-
-.positions-section p,
-.notice-section p {
-    margin: 0.5rem 0;
     line-height: 1.6;
+}
+
+.info-row .label {
+    width: 90px;
+    color: #333;
+}
+
+.info-row .value {
+    flex: 1;
+    color: #444;
+}
+
+.honors-section {
+    margin-bottom: 2rem;
+}
+
+.honors-section h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.honors-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.honors-section li {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.achievements-section p {
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
 }
 
 /* 联系信息样式 */
@@ -486,31 +513,26 @@ body {
 @media (max-width: 768px) {
     .profile-section {
         flex-direction: column;
-        align-items: center;
+        padding: 1rem;
     }
 
     .profile-image {
-        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
-    .profile-info {
+    .brief-info {
         text-align: center;
     }
 
-    .contact-info {
+    .info-row {
         flex-direction: column;
-        align-items: center;
     }
 
-    .personal-info .info-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .personal-info .label {
-        margin-right: 0;
-        margin-bottom: 0.3rem;
+    .info-row .label {
+        width: auto;
+        margin-bottom: 0.2rem;
     }
 
     .project-meta {
@@ -536,8 +558,7 @@ body {
 @media (max-width: 768px) {
     .profile-section {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        padding: 1rem;
     }
 
     .nav-container {
